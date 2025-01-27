@@ -1,16 +1,21 @@
 ﻿# AnimalHierarchy
 
 ## Description
-This project implements a hierarchy of animal classes using **Inversion of Control (IoC)** and **Dependency Injection (DI)** principles. Each animal class stores data for a specific animal, such as its name and the sound it makes. Output can be displayed in the console, written to a file, or both simultaneously.
+A console application that demonstrates the use of **Inversion of Control (IoC)** and **Dependency Injection (DI)**. The project implements a hierarchy of animals where each animal has a name and the sound it makes. Outputs can be displayed in the console, saved to a file (`output.txt` in the root directory), or both simultaneously.
 
----
-
-## How to Enable Console and File Output Simultaneously
-To output data both to the console and to a file, the `CompositeOutput` class is used. Update the dependency injection configuration in `Program.cs` as follows:
-
-```csharp
-.AddSingleton<IOutput>(provider => new CompositeOutput(new IOutput[]
-{
-    new ConsoleOutput(),           // Output to console
-    new FileOutput("output.txt")   // Output to file
-}))
+## Project Structure
+```plaintext
+AnimalHierarchy/
+├── Interfaces/
+│   ├── IAnimal.cs
+│   └── IOutput.cs
+├── Models/
+│   ├── Dog.cs
+│   └── Cat.cs
+├── Services/
+│   ├── CompositeOutput.cs
+│   ├── ConsoleOutput.cs
+│   └── FileOutput.cs
+├── Program.cs
+├── README.md
+└── AnimalHierarchy.csproj
