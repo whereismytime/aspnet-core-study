@@ -1,22 +1,9 @@
 ﻿# NotesApp
 
 ## Description
-A console application for managing notes. Implements the MVC pattern with **Dependency Injection (DI)** using ASP.NET Core. Allows adding, saving, and loading notes from files.
+A console application for managing notes. The project implements the **MVC pattern** with **Dependency Injection (DI)** using ASP.NET Core. It allows creating, saving, and loading notes from a JSON file (`notes.json` in the root directory).
 
----
-
-## Features
-1. Create and manage notes with:
-   - Title
-   - Content
-   - Creation date
-   - Tags
-2. Save and load notes in JSON format.
-3. Display notes in the console or save them to a file.
-
----
-
-## File Structure
+## Project Structure
 ```plaintext
 NotesApp/
 ├── Controllers/
@@ -26,7 +13,7 @@ NotesApp/
 │   ├── NotesRepository.cs
 ├── Views/
 │   ├── ConsoleView.cs
-│   ├── FileView.cs
+│   └── FileView.cs
 ├── notes.json
 ├── Program.cs
 ├── README.md
