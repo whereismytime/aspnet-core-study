@@ -1,25 +1,26 @@
 # ASP.NET Core Study
 
-## Description
-This repository contains projects and examples for learning **ASP.NET Core** development. The projects demonstrate the use of key principles like **Dependency Injection (DI)**, **Inversion of Control (IoC)**, and the **MVC pattern**.
+This repository contains a collection of ASP.NET Core projects developed for educational purposes. Each project demonstrates key patterns and principles of ASP.NET Core development.
+
+## Projects Overview
+
+- **01_AnimalHierarchy/AnimalHierarchy**  
+  A project demonstrating a hierarchical model of animals using Dependency Injection (DI) and Inversion of Control (IoC).
+
+- **02_NotesApp/NotesApp**  
+  A notes management application built using the MVC pattern.
+
+- **03_OnlineUsersCounter/OnlineUsersCounter**  
+  A web application that tracks the number of online users in real time, featuring a dynamic particle background.
 
 ## Repository Structure
-```plaintext
+
 aspnet-core-study/
-├── 01_AnimalHierarchy/
-│   └── AnimalHierarchy/
-│       ├── Interfaces/
-│       ├── Models/
-│       ├── Services/
-│       ├── Program.cs
-│       └── AnimalHierarchy.csproj
-├── 02_NotesApp/
-│   └── NotesApp/
-│       ├── Controllers/
-│       ├── Models/
-│       ├── Views/
-│       ├── Program.cs
-│       └── NotesApp.csproj
+├── 01_AnimalHierarchy/AnimalHierarchy/
+├── 02_NotesApp/NotesApp/
+├── 03_OnlineUsersCounter/OnlineUsersCounter/
 ├── .gitignore
 ├── LICENSE
 └── README.md
+
+For detailed information about each project, please refer to the respective README files located within each project folder.
